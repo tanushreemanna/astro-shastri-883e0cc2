@@ -51,7 +51,7 @@ function Hero() {
   return (
     <section className="night-gradient relative flex min-h-[100svh] items-center overflow-hidden">
       <div
-        className="pointer-events-none absolute left-1/2 top-1/2 aspect-square w-[135vw] max-w-[1100px] -translate-x-1/2 -translate-y-1/2 opacity-45 sm:w-[95vw]"
+        className="pointer-events-none absolute left-1/2 top-1/2 h-[min(120vw,880px)] w-[min(120vw,880px)]"
         style={{
           transform: `translate(-50%, calc(-50% + ${offset * 0.08}px)) rotate(${offset * 0.015}deg)`,
         }}
@@ -61,9 +61,10 @@ function Hero() {
           alt="Illustrated zodiac wheel with constellation lines and a crescent moon"
           width={1408}
           height={1408}
-          className="h-full w-full object-contain"
+          className="h-full w-full object-cover opacity-70 mix-blend-screen"
         />
       </div>
+
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(60%_50%_at_50%_50%,transparent,var(--background)_88%)]" />
 
       <div className="relative mx-auto w-full max-w-3xl px-6 py-32 text-center">

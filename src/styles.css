@@ -132,18 +132,6 @@
   backdrop-filter: blur(14px);
 }
 
-@utility reveal {
-  opacity: 0;
-  transform: translateY(28px);
-  transition:
-    opacity 900ms cubic-bezier(0.22, 1, 0.36, 1),
-    transform 900ms cubic-bezier(0.22, 1, 0.36, 1);
-  &[data-visible="true"] {
-    opacity: 1;
-    transform: none;
-  }
-}
-
 @keyframes slow-spin {
   to {
     transform: rotate(360deg);

@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 const links = [
   { to: "/horoscope", label: "Horoscope" },
   { to: "/birth-chart", label: "Birth Chart" },
-  { to: "/#explore", label: "Explore" },
+  { to: "/", hash: "explore", label: "Explore" },
 ] as const;
 
 export function SiteNav() {
@@ -35,8 +35,9 @@ export function SiteNav() {
         <div className="hidden justify-center gap-9 text-sm tracking-wide text-muted-foreground lg:flex">
           {links.map((l) => (
             <Link
-              key={l.to}
+              key={l.label}
               to={l.to}
+              hash={"hash" in l ? l.hash : undefined}
               className="transition-colors hover:text-foreground"
               activeProps={{ className: "text-foreground" }}
             >
@@ -72,8 +73,9 @@ export function SiteNav() {
           <div className="flex flex-col gap-1">
             {links.map((l) => (
               <Link
-                key={l.to}
+                key={l.label}
                 to={l.to}
+                hash={"hash" in l ? l.hash : undefined}
                 onClick={() => setOpen(false)}
                 className="border-b border-border/60 py-4 font-display text-2xl text-foreground"
               >

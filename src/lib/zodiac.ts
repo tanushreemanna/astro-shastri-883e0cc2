@@ -69,7 +69,7 @@ const makeReadings = (
   ),
 });
 
-export const ZODIAC: ZodiacSign[] = [
+const RAW: [string, string, string, string, string, string][] = [
   ["aries", "Aries", "♈", "Mar 21 – Apr 19", "Fire", "Your restlessness is information, not impatience."],
   ["taurus", "Taurus", "♉", "Apr 20 – May 20", "Earth", "Comfort and progress are not opposites this cycle."],
   ["gemini", "Gemini", "♊", "May 21 – Jun 20", "Air", "One clear idea outweighs a dozen half-formed ones."],
@@ -82,7 +82,9 @@ export const ZODIAC: ZodiacSign[] = [
   ["capricorn", "Capricorn", "♑", "Dec 22 – Jan 19", "Earth", "Ambition softens when you let it rest."],
   ["aquarius", "Aquarius", "♒", "Jan 20 – Feb 18", "Air", "Your difference is the point, not the problem."],
   ["pisces", "Pisces", "♓", "Feb 19 – Mar 20", "Water", "Intuition arrives early; evidence catches up."],
-].map(([slug, name, symbol, dates, element, preview]) => ({
+];
+
+export const ZODIAC: ZodiacSign[] = RAW.map(([slug, name, symbol, dates, element, preview]) => ({
   slug,
   name,
   symbol,

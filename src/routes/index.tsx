@@ -61,7 +61,11 @@ function Hero() {
           alt="Illustrated zodiac wheel with constellation lines and a crescent moon"
           width={1408}
           height={1408}
-          className="h-full w-full object-cover opacity-70 mix-blend-screen [mask-image:radial-gradient(circle_at_center,black_38%,transparent_70%)]"
+          className="h-full w-full object-cover opacity-45 mix-blend-screen"
+          style={{
+            maskImage: "radial-gradient(circle at center, black 30%, transparent 66%)",
+            WebkitMaskImage: "radial-gradient(circle at center, black 30%, transparent 66%)",
+          }}
         />
       </div>
 

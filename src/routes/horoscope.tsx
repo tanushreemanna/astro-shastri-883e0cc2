@@ -4,7 +4,7 @@ import { PERIODS, ZODIAC, type Period } from "@/lib/zodiac";
 import { Reveal } from "@/components/reveal";
 import { cn } from "@/lib/utils";
 
-type Search = { sign?: string };
+type Search = { sign?: string | undefined };
 
 export const Route = createFileRoute("/horoscope")({
   validateSearch: (search: Record<string, unknown>): Search => ({

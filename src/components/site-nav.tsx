@@ -37,7 +37,7 @@ export function SiteNav() {
             <Link
               key={l.label}
               to={l.to}
-              hash={"hash" in l ? l.hash : undefined}
+              {...("hash" in l ? { hash: l.hash } : {})}
               className="transition-colors hover:text-foreground"
               activeProps={{ className: "text-foreground" }}
             >
@@ -75,7 +75,7 @@ export function SiteNav() {
               <Link
                 key={l.label}
                 to={l.to}
-                hash={"hash" in l ? l.hash : undefined}
+                {...("hash" in l ? { hash: l.hash } : {})}
                 onClick={() => setOpen(false)}
                 className="border-b border-border/60 py-4 font-display text-2xl text-foreground"
               >

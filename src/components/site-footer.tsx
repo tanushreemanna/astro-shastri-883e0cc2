@@ -5,7 +5,7 @@ export function SiteFooter() {
     <footer className="border-t border-border bg-surface/40">
       <div className="mx-auto grid max-w-7xl gap-10 px-5 py-16 md:grid-cols-3 md:px-8">
         <div>
-          <p className="font-display text-lg tracking-[0.32em] uppercase">[Brand Name]</p>
+          <p className="font-display text-lg tracking-[0.32em] uppercase">ASTRO SHASTRI</p>
           <p className="mt-4 max-w-xs text-sm leading-relaxed text-muted-foreground">
             A calm, modern place to read the sky — birth charts, horoscopes and the beginnings of a
             personal astrology practice.

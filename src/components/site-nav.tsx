@@ -29,7 +29,7 @@ export function SiteNav() {
     >
       <nav className="mx-auto grid max-w-7xl grid-cols-[minmax(0,1fr)_auto] items-center gap-4 px-5 py-4 md:px-8 lg:grid-cols-[auto_1fr_auto]">
         <Link to="/" className="min-w-0 font-display text-lg tracking-[0.32em] text-foreground uppercase">
-          [Brand&nbsp;Name]
+          ASTRO SHASTRI
         </Link>
 
         <div className="hidden justify-center gap-9 text-sm tracking-wide text-muted-foreground lg:flex">

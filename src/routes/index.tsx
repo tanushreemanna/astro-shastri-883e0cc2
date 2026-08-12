@@ -16,10 +16,10 @@ export const Route = createFileRoute("/")({
         content:
           "Explore your horoscope, discover your birth chart and begin your journey into astrology with a calm, modern reading of the sky.",
       },
-      { property: "og:title", content: "The stars have a story. Discover yours." },
+      { property: "og:title", content: "The stars have a story — Free Birth Chart & Horoscope" },
       {
         property: "og:description",
-        content: "Free birth chart and daily horoscopes in a calm, modern astrology experience.",
+        content: "Explore your horoscope, discover your birth chart and begin your journey into astrology with a calm, modern reading of the sky.",
       },
     ],
   }),

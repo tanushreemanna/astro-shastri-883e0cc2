@@ -77,14 +77,20 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Modern Astrology — Birth Charts & Horoscopes" },
+      { title: "The stars have a story — Free Birth Chart & Horoscope" },
       {
         name: "description",
         content:
-          "A calm, modern astrology experience: free birth charts, daily horoscopes and a quiet way to read the sky.",
+          "Explore your horoscope, discover your birth chart and begin your journey into astrology with a calm, modern reading of the sky.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
+      { property: "og:title", content: "The stars have a story — Free Birth Chart & Horoscope" },
+      { name: "twitter:title", content: "The stars have a story — Free Birth Chart & Horoscope" },
+      { property: "og:description", content: "Explore your horoscope, discover your birth chart and begin your journey into astrology with a calm, modern reading of the sky." },
+      { name: "twitter:description", content: "Explore your horoscope, discover your birth chart and begin your journey into astrology with a calm, modern reading of the sky." },
+      { property: "og:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/badf987338d0fa96fe8bc766aaf96552/id-preview-634f437f--c75eeba1-ae55-46af-aed8-4a7574ff796a.lovable.app-1786500591437.png" },
+      { name: "twitter:image", content: "https://pub-bb2e103a32db4e198524a2e9ed8f35b4.r2.dev/badf987338d0fa96fe8bc766aaf96552/id-preview-634f437f--c75eeba1-ae55-46af-aed8-4a7574ff796a.lovable.app-1786500591437.png" },
     ],
     links: [
       { rel: "stylesheet", href: appCss },
